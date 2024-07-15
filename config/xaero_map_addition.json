@@ -1,0 +1,30 @@
+{
+  "generic": {
+    "debug": false,
+    "openConfigGui": {
+      "keys": "X,A"
+    }
+  },
+  "xaerominimap": {
+    "minimapHighlightWaypoint": true,
+    "betterWaypointSharingHandler": true,
+    "directDeleteButton": true
+  },
+  "xaeroworldmap": {
+    "closeMapAfterQuickTeleport": false,
+    "worldMapHighlightWaypoint": true,
+    "quickTeleport": {
+      "keys": "T",
+      "settings": {
+        "activate_on": "PRESS",
+        "context": "GUI",
+        "allow_empty": false,
+        "allow_extra_keys": false,
+        "order_sensitive": true,
+        "exclusive": false,
+        "cancel": true
+      }
+    }
+  },
+  "configVersion": 1
+}
