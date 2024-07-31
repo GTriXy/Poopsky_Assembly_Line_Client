@@ -1,0 +1,42 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_shit"
+	group: ""
+	id: "2F2A04622E69C198"
+	images: [{
+		height: 1.0d
+		image: "poopsky:textures/images/000.png"
+		rotation: 0.0d
+		width: 3.471186440677966d
+		x: -1.5d
+		y: -3.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["Poopsky：Assembly Line 是基于 PoopSky 开发的科技向空岛"]
+		id: "155B6A4F7C82A4E9"
+		rewards: [
+			{
+				id: "1C31BB80BDB541C4"
+				item: "kubejs:toilet_block"
+				type: "item"
+			}
+			{
+				count: 16
+				id: "1F1DFAE2AB34798A"
+				item: "minecraft:torch"
+				type: "item"
+			}
+		]
+		tasks: [{
+			id: "243AFE9C846BD3F2"
+			title: "欢迎"
+			type: "checkmark"
+		}]
+		x: -1.5d
+		y: -1.5d
+	}]
+	title: "欢迎来到Poopsky：Assembly Line"
+}

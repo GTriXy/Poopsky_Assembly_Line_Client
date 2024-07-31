@@ -1,0 +1,67 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7B97962AC60B618F"
+	group: ""
+	id: "7B97962AC60B618F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7F8F5646A88D41C8"
+			tasks: [{
+				count: 64L
+				id: "22E5785CAD2DF620"
+				item: "kubejs:lunar_poop"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			id: "42C9C9F2BA0BD277"
+			tasks: [{
+				count: 64L
+				id: "064F45AFA11EBC81"
+				item: { Count: 64, id: "kubejs:ice_crystal_poop" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			id: "0DCFD7EDD96D87AD"
+			tasks: [{
+				count: 64L
+				id: "188C8907C06BFDA8"
+				item: { Count: 64, id: "kubejs:martian_poop" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			id: "151180EDE532D694"
+			tasks: [{
+				count: 64L
+				id: "424A914946DDCA5D"
+				item: { Count: 64, id: "kubejs:venusian_poop" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			id: "09581AED075A452E"
+			tasks: [{
+				count: 64L
+				id: "465606269FEABC16"
+				item: { Count: 64, id: "manure:manure" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+	]
+	title: "全收集！"
+}

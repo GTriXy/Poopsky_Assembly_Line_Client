@@ -1,0 +1,392 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "59A1C786189B30FB"
+	group: ""
+	icon: "manure:manure"
+	id: "59A1C786189B30FB"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["潜行对着厕所右键，就会消耗饥饿值产生粪便"]
+			id: "3085DDE17E1B20BB"
+			rewards: [{
+				count: 64
+				id: "59196CE2FA22CA3B"
+				item: "manure:manure"
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 2.0d
+			tasks: [{
+				id: "695867B5C1186B77"
+				item: "manure:manure"
+				type: "item"
+			}]
+			title: "梦开始的地方"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3085DDE17E1B20BB"]
+			description: ["用四个粪便合成粪便块"]
+			id: "330AA1153A9CB8EC"
+			rewards: [{
+				count: 16
+				id: "2B2AE3570C56A860"
+				item: "kubejs:manure_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "474CDA3B82DF2ACF"
+				item: "kubejs:manure_block"
+				type: "item"
+			}]
+			title: "这可比泥土好用多了"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3085DDE17E1B20BB"]
+			description: ["食用粪便有六分之一的概率产生竹子"]
+			id: "2B7F8903F5895F6F"
+			tasks: [{
+				id: "1F40930C072A8833"
+				item: "minecraft:bamboo"
+				type: "item"
+			}]
+			title: "好硬"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2B7F8903F5895F6F"]
+			id: "7933CC02F9A733ED"
+			rewards: [{
+				count: 16
+				id: "186796BE45CB0642"
+				item: "minecraft:bamboo_planks"
+				type: "item"
+			}]
+			tasks: [{
+				id: "202589B7ACA17CF7"
+				item: "minecraft:bamboo_planks"
+				type: "item"
+			}]
+			title: "木制时代，启动！"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["330AA1153A9CB8EC"]
+			description: ["在不同的群系中食用粪便块可以掉落树苗"]
+			id: "5496F2BF365D40A9"
+			rewards: [
+				{
+					id: "5E70818DBF4DAE79"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "36955DEFE6D97AE1"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+				{
+					id: "03D669048F760905"
+					item: "minecraft:birch_sapling"
+					type: "item"
+				}
+				{
+					id: "03631D17E018C110"
+					item: "minecraft:jungle_sapling"
+					type: "item"
+				}
+				{
+					id: "598E61F2819A49DA"
+					item: "minecraft:acacia_sapling"
+					type: "item"
+				}
+				{
+					id: "54B9E65EFD1841A1"
+					item: "minecraft:dark_oak_sapling"
+					type: "item"
+				}
+				{
+					id: "1D3F162AD7515DF7"
+					item: "minecraft:cherry_sapling"
+					type: "item"
+				}
+				{
+					id: "32405AD104A4BEC4"
+					item: "minecraft:mangrove_propagule"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "75E63FD7D96F1F7D"
+					item: "minecraft:oak_leaves"
+					type: "item"
+				}
+				{
+					id: "3315B2E8EAA850CC"
+					item: "minecraft:spruce_leaves"
+					type: "item"
+				}
+				{
+					id: "4126A44C56F0AC11"
+					item: "minecraft:birch_leaves"
+					type: "item"
+				}
+				{
+					id: "0EBC4B5B2E1E5611"
+					item: "minecraft:jungle_leaves"
+					type: "item"
+				}
+				{
+					id: "3E17D06C7F3D4A7F"
+					item: "minecraft:acacia_leaves"
+					type: "item"
+				}
+				{
+					id: "0F20B527033E5154"
+					item: "minecraft:dark_oak_leaves"
+					type: "item"
+				}
+				{
+					id: "3C0D3A5E51ED23B4"
+					item: "minecraft:mangrove_leaves"
+					type: "item"
+				}
+				{
+					id: "470F6D89ACDE0056"
+					item: "minecraft:cherry_leaves"
+					type: "item"
+				}
+			]
+			title: "全树种"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"5496F2BF365D40A9"
+				"7933CC02F9A733ED"
+			]
+			dependency_requirement: "one_completed"
+			id: "020168CB09717190"
+			tasks: [{
+				id: "50D18AFE671A5A18"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "什么？工作台！"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["020168CB09717190"]
+			description: ["利用活版门下降到最底层"]
+			id: "77059AE50B007A69"
+			rewards: [{
+				count: 16
+				id: "7F027F1A6ABEBF99"
+				item: "minecraft:bamboo_trapdoor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E4146DD5B095B44"
+				item: "minecraft:bamboo_trapdoor"
+				type: "item"
+			}]
+			title: "到达世界最底层 y-64"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["020168CB09717190"]
+			id: "7467A1A4C3D44E1C"
+			tasks: [{
+				id: "4CBA5430A44D69C8"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			title: "tm的梦"
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["77059AE50B007A69"]
+			id: "3F7ACCC10AD727C0"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "2AA3A44AC44CC6B5"
+				type: "kill"
+				value: 1L
+			}]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["77059AE50B007A69"]
+			id: "02FF2877D11218BB"
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "04AA7650657B0CC3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["020168CB09717190"]
+			description: ["蜘蛛网和粪便可以合成厕所"]
+			id: "5A21B7D127BBFCF9"
+			tasks: [{
+				id: "0EBFF0051A70500B"
+				item: "minecraft:cobweb"
+				type: "item"
+			}]
+			title: "更多厕所"
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["77059AE50B007A69"]
+			id: "7BFE8ECE0A96E792"
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "3575DDFA2E973A40"
+				type: "kill"
+				value: 1L
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F7ACCC10AD727C0"]
+			description: ["希望你已经造好刷怪塔了"]
+			id: "6229480D4AB91F4C"
+			rewards: [{
+				count: 6
+				id: "0BE747863216B606"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "785757B27D35183C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "铁器时间到！"
+			x: 15.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6229480D4AB91F4C"]
+			id: "2FBE5A5B6B281C27"
+			tasks: [{
+				id: "1BF66CF23925CE5F"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			title: "天上下的是雨，还是尿呢？"
+			x: 18.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["02FF2877D11218BB"]
+			id: "138F1C8881313C27"
+			rewards: [{
+				count: 2
+				id: "4702C7B63BF65205"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71FF67CC5B6CEDB6"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			title: "这是装水的，还是装尿的？"
+			x: 15.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["138F1C8881313C27"]
+			id: "5230D69347461BFD"
+			tasks: [{
+				id: "041C62211F5FEB4E"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "kubejs:septic"
+					}
+				}
+				type: "item"
+			}]
+			title: "装尿的！"
+			x: 18.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5230D69347461BFD"
+				"2FBE5A5B6B281C27"
+			]
+			id: "3B9A25977004E6B6"
+			tasks: [{
+				id: "3294D4C86F0EE56A"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "生命之源"
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B9A25977004E6B6"]
+			description: [
+				"向含有水的炼药锅投入粪便块、铁锭、腐肉、蜘蛛眼、糖、萤石粉、粘液球即可获得岩浆"
+				"{image:poopsky:textures/images/png001.png width:150 height:20 align:1}"
+			]
+			id: "667601041EE3A567"
+			tasks: [{
+				id: "7B07B1C2854511EB"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			title: "沼气动力！"
+			x: 23.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B9A25977004E6B6"]
+			id: "7CBF31F0B16ADFEF"
+			tasks: [{
+				entity: "minecraft:guardian"
+				id: "1BA373D656C91174"
+				type: "kill"
+				value: 1L
+			}]
+			x: 23.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3B9A25977004E6B6"]
+			id: "327DD4B437FE210E"
+			tasks: [{
+				id: "2F17F9276AD59D1F"
+				item: "minecraft:drowned_spawn_egg"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 1.0d
+		}
+	]
+	title: "第一章 香草时代"
+}
